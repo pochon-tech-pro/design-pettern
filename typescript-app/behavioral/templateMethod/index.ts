@@ -63,14 +63,11 @@ class TableDisplay extends AbstractDisplay // ConcreteClass
     }
 }
 
-function run() {
-    const inputs = ['山田太郎', '田中太郎', '佐藤太郎'];
-    // サブクラスの型はその親クラスの型と置換可能（リスコフの置換原則）
-    const listDisplay: AbstractDisplay = new ListDisplay(...inputs);
-    const tableDisplay: AbstractDisplay = new TableDisplay(...inputs);
+// yarn ts-node behavioral/templateMethod/index.ts
+const inputs = ['山田太郎', '田中太郎', '佐藤太郎'];
+// サブクラスの型はその親クラスの型と置換可能（リスコフの置換原則）
+const listDisplay: AbstractDisplay = new ListDisplay(...inputs);
+const tableDisplay: AbstractDisplay = new TableDisplay(...inputs);
 
-    listDisplay.display();
-    tableDisplay.display();
-}
-
-run(); // yarn ts-node behavioral/templateMethod/index.ts
+listDisplay.display();
+tableDisplay.display();
