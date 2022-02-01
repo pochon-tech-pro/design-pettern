@@ -19,4 +19,8 @@ func main() {
 	if flag.Arg(0) == "singleton" { //  go run main.go singleton
 		singleton.Run()
 	}
+
+	if flag.Arg(0) == "singleton2" { //  go run main.go singleton2
+		singleton.Run2()
+	}
 }
