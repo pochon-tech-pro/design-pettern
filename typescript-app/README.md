@@ -21,3 +21,9 @@ hello('Tarou')
 
 yarn ts-node index.ts
 ```
+
+## NodeJsでCSVFIleを扱う
+```zsh
+yarn add csv-parse  # 使い方: https://csv.js.org/parse/api/sync/
+yarn add iconv-lite # Excel等のShift-JISのCSVを開く時に利用する
+```
