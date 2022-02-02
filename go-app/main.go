@@ -28,4 +28,8 @@ func main() {
 	if flag.Arg(0) == "adapter" { //  go run main.go adapter
 		adapter.Run()
 	}
+
+	if flag.Arg(0) == "adapter2" { //  go run main.go adapter2
+		adapter.Run2()
+	}
 }
