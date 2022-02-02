@@ -5,6 +5,7 @@ import (
 	"fmt"
 	"go-app/behavioral/template_method"
 	"go-app/creational/singleton"
+	"go-app/structural/adapter"
 )
 
 func main() {
@@ -22,5 +23,9 @@ func main() {
 
 	if flag.Arg(0) == "singleton2" { //  go run main.go singleton2
 		singleton.Run2()
+	}
+
+	if flag.Arg(0) == "adapter" { //  go run main.go adapter
+		adapter.Run()
 	}
 }
