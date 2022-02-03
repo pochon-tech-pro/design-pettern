@@ -4,6 +4,7 @@ import (
 	"flag"
 	"fmt"
 	"go-app/behavioral/template_method"
+	"go-app/creational/factory_method"
 	"go-app/creational/singleton"
 	"go-app/structural/adapter"
 )
@@ -31,5 +32,9 @@ func main() {
 
 	if flag.Arg(0) == "adapter2" { //  go run main.go adapter2
 		adapter.Run2()
+	}
+
+	if flag.Arg(0) == "factory_method" { //  go run main.go factory_method
+		factory_method.Run()
 	}
 }
